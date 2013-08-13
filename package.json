@@ -1,7 +1,7 @@
 {
   "name": "ninja-notification",
   "version": "1.0.1",
-  "description": "A popup notification NinjaBlocks driver (Mac-only)",
+  "description": "NinjaBlocks Pop-up Notification driver (Mac)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
