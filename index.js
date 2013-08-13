@@ -38,9 +38,14 @@ function Device(app) {
 
 Device.prototype.write = function(data) {
   if (typeof data == 'string') {
-    data = {
-      message: data
-    };
+    try {
+      data = JSON.parse(data);
+    } catch(e) {
+      // probably not json, just try and show it.
+       data = {
+        message: data
+      };
+    }
   }
 
   osxNotifier({

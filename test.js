@@ -24,12 +24,18 @@ d.emit = function(channel, value) {
             subtitle: 'Home',
             message: 'Someone is at the front door.',
             url: 'http://ninjablocks.com',
-            type: 'info'
+            type: 'fail'
         });
 
         setTimeout(function() {
             value.write('Simple text notification');
         }, 2000);
+
+        setTimeout(function() {
+            value.write('{"title":"hello","subtitle":"what up?","message":"you rock!"}');
+        }, 4000);
+
+
     }
 
 };
